@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --p1: hsl(31, 77%, 52%);
+    --p2: hsl(184, 100%, 22%);
+    --p3: hsl(179, 100%, 13%);
+    --n1: hsla(0, 0%, 100%, 0.75);
+    --n2: hsl(0, 0%, 95%);
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--n2);
+}
+header {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card {
+    max-width: 300px;
+    min-width: 300px;
+    padding: 40px;
+}
+.card h1 {
+    font-size: 2.4em;
+    padding-top: 30px;
+    text-transform: uppercase;
+    color:var(--n2);
+    font-family: "Big Shoulders Display",sans-serif;
+}
+.card p {
+    padding:20px 10px 80px 0;
+    font-size: 15px;
+    color:var(--n1);
+    line-height: 1.8;
+    font-family: "Lexend Deca",sans-serif;
+}
+.card button {
+    font-family: "Lexend Deca",sans-serif;
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin-right: 40px;
+    border-color: var(--n1);
+}
+.one {
+    background-color: var(--p1);
+}
+.one button {
+    color: var(--p1);
+}
+.two {
+    background-color: var(--p2);
+}
+.two button {
+    color: var(--p2);
+}
+.three {
+    background-color: var(--p3);
+}
+.three button {
+    color: var(--p3);
+}
+.card button:hover {
+    background-color: transparent;
+    color: var(--n2);
+
+}
+
+@media screen and (max-width:950px) {
+    header {
+        flex-direction: column;
+
+    }
+    
+}
+
+
+
+
+.attribution { font-size: 16px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
